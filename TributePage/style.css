@@ -1,0 +1,126 @@
+body {
+	margin: -8px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 100%; /* Makes the font go to 16 pixels */
+	line-height: 1.6;
+	background: #F0F2F0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #330606, #330606, #F0F2F0, #330606);
+	background: linear-gradient(to top, #330606, #330606, #F0F2F0, #330606);
+}
+
+main {
+	max-width: 1680px;
+}
+
+header {
+	position: absolute;
+	top: 80vh;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 4vw; 
+	font-weight: lighter;
+	text-align: center;
+	background-color: rgba(103, 14, 14, 0.5);
+}
+
+h2 {
+	text-align: center;
+}
+
+#img-div {
+	position: relative;
+	max-width: 1599px;
+	margin: auto;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+#img-caption {
+	position: absolute;
+	text-align: center;
+	margin-top: -22px;
+	padding-left: 4px;
+	padding-right: 4px;
+	left: 0;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);	
+}
+
+
+
+#section_1 {
+	width: 100%;
+	margin: auto;
+	padding-top: 60px;
+}
+
+.biography {
+	width: 70%;
+	margin: auto;
+}
+
+.discography {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.singles, .albums {
+	min-width: 400px;
+}
+
+
+
+#section_2 {
+	padding-top: 60px;
+	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: center;	
+}
+
+.video {
+	margin: 20px;
+}
+
+figcaption {
+	text-align: center;
+	margin-top: 5px;
+}
+
+figcaption,
+footer  {
+	color: #C0C0C0;
+	background-color:rgba(0, 0, 0, 0.2);
+}
+
+footer {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin: 0 -8px 0 -8px;
+	text-align: center;
+}
+
+footer > a {
+	text-decoration: none;
+	
+	color: white;
+}
+
+
+@media (max-width: 1000px) {
+	header {
+		top: 0;
+	}
+}
