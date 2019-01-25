@@ -1,0 +1,173 @@
+/*@import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700');*/
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Nothing+You+Could+Do|Quattrocento:400,700|Sacramento|The+Girl+Next+Door');
+
+body {
+	background: url("./background.jpg");
+	font-family: 'Quattrocento', serif;
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 1.3em;
+}
+
+h1 {
+	font-family: 'The Girl Next Door', serif;
+	text-align: center;
+	font-size: 3em;
+}
+
+.container {
+	max-width: 800px;
+	background-color:rgba(252, 253, 247, 0.97);
+	margin: auto;
+	padding: 50px;
+	-webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.75);
+}
+
+.form-element {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+input,
+textarea,
+#dropdown {
+	outline: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+#dropdown,
+textarea {
+	border: none;
+	border-bottom: 2px solid grey;
+	width: 70%;
+	font-size: 1em;
+	background: transparent;
+}
+
+input[type=radio],
+input[type=checkbox] {
+	font-size: 1em;
+}
+
+input:focus, textarea:focus {
+	background   : rgba(0,0,0,.1);
+	border-radius: 5px;
+	outline      : none;
+}
+
+
+label {
+	font-weight: 700;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#checkbox-label {
+	width: 25%;
+}
+
+.form-radio {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.form-checkbox {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.checkbox-label,
+.radio-label {
+	padding: 0 10px 0 10px;
+	width: 50%;
+	text-align: right;
+}
+
+.checkbox-button,
+.radio-button {
+	padding: 0 10px 0 10px;
+	width: 50%;
+}
+
+#submit {
+	width: 100px;
+	height: 50px;
+	
+	font-family: 'Quattrocento', serif;
+	font-weight: 700;
+	font-size: 0.9em;
+
+	border: 1px grey;
+	background-color: rgba(228, 139, 174, 0.9);
+
+	-webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 600px) {
+
+	h1 {
+		font-size: 10vw;
+	}
+
+	#name-label,
+	#email-label,
+	#number-label,
+	#checkbox-label {
+		display: block;
+		width: 100%;
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=number],
+	#dropdown,
+	textarea {
+		width: 100%;
+	}
+
+
+	.form-radio {
+		display: block;
+	}
+
+	.form-checkbox {
+		display: block;
+	}
+
+	.checkbox-label,
+	.radio-label {
+		text-align: left;
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+
+	.checkbox-button,
+	.radio-button {
+		width: 100%;
+	}
+
+}
+
+
+
+
+/*
+*
+*  background https://www.patterncooler.com
+*
+*
+*
+*
+*/
