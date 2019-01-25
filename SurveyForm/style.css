@@ -1,5 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700');*/
-@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Nothing+You+Could+Do|Quattrocento:400,700|Sacramento|The+Girl+Next+Door');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento:400,700|Sacramento|The+Girl+Next+Door');
 
 body {
 	background: url("./background.jpg");
@@ -136,7 +135,6 @@ label {
 		width: 100%;
 	}
 
-
 	.form-radio {
 		display: block;
 	}
@@ -166,8 +164,5 @@ label {
 /*
 *
 *  background https://www.patterncooler.com
-*
-*
-*
 *
 */
