@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Discog Api</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+
+        <form id="paring">
+            <div class="form-group">
+                <label class="control-label">Otsi artisti</label>
+                <div class="">
+                    <input type="text" class="form-control" id="artist" name="artist" placeholder="Artist" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-info btn-lg" id="otsi">Otsi</button>
+            </div>
+
+        </form>
+
+        <div class="row">
+            <ul class="list-group vastus" id="vastus">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" language="javascript">
+
+    function nupuke(value) {
+
+
+        //b.preventDefault();
+        //var leht = $(this).find("button[value]").attr('value');
+        var leht = value;
+
+        //var leht = document.getElementById('next').value;
+        //console.log(leht);
+        //alert(leht);
+        //var leht = $(this).attr('value');
+        //var leht = this.value;
+        $.get("getData.php", {leht: leht}, function(data){
+
+            $('#vastus').html(data);
+        });
+    }
+
+    $('#paring input[type=text]').on('change invalid', function() {
+        var textfield = $(this).get(0);
+
+        // 'setCustomValidity not only sets the message, but also marks
+        // the field as invalid. In order to see whether the field really is
+        // invalid, we have to remove the message first
+        textfield.setCustomValidity('');
+
+        if (!textfield.validity.valid) {
+            textfield.setCustomValidity('Palun t2itke otsingulahter!');
+        }
+    });
+
+
+    $(document).ready(function () {
+
+        $('#paring').submit(function(e){
+
+            e.preventDefault();
+
+            var artist = $('#artist').val();
+            $.get("getData.php", {artist: artist}, function(data){
+
+                $('#vastus').html(data);
+
+            });
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
