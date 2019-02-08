@@ -14,7 +14,7 @@ function file_get_contents_curl($url) {
     //curl_setopt( $ch, CURLOPT_URL, $url );
     //curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, TRUE );
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);   // <<<<<<<================ kuidas seda normaalseks saab, et mööda ei hiiliks turvalisusest
-    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67");
+    //curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 OPR/50.0.2762.67");
 
     $data = curl_exec($ch);
     $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
