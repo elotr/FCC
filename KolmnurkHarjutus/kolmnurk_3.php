@@ -1,118 +1,125 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"content="width=device-width">
+    <title>Kolmnurk</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2 style="text-align: center; margin-bottom: 50px; margin-top: 60px">LAHENDA KOLMNURK</h2>
+        <div class="row">
+            <form action="" method="post" class="form-inline">
+                <blockquote style="display: inline">SSS</blockquote>
+
+                <div class="form-group">
+                    <label for="">Sisesta kolmnurga külgede pikkused:</label>
+                    <input type="text" class="form-control" name="a" id="" placeholder="külg a">
+                    <input type="text" class="form-control" name="b" id="" placeholder="külg b">
+                    <input type="text" class="form-control" name="c" id="" placeholder="külg c">
+
+                    <button type="submit" class="btn btn-primary" name="sss" value="sss">Arvuta</button>
+                </div>
+            </form>
+
+            <form action="" method="post" class="form-inline">
+                <blockquote style="display: inline">SAS</blockquote>
+
+                <div class="form-group">
+                    <label for="">Sisesta küljed a ja b ning nurk C:</label>
+                    <input type="text" class="form-control" name="a" id="" placeholder="külg a">
+                    <input type="text" class="form-control" name="b" id="" placeholder="külg b">
+                    <input type="text" class="form-control" name="C" id="" placeholder="nurk C">
+
+                    <button type="submit" class="btn btn-primary" name="sas" value="sas">Arvuta</button>
+                </div>
+            </form>
+
+            <form action="" method="post" class="form-inline">
+                <blockquote style="display: inline">SSA</blockquote>
+
+                <div class="form-group">
+                    <label for="">Sisesta küljed a ja b ning nurk B:</label>
+                    <input type="text" class="form-control" name="a" id="" placeholder="külg a">
+                    <input type="text" class="form-control" name="b" id="" placeholder="külg b">
+                    <input type="text" class="form-control" name="B" id="" placeholder="nurk B">
+
+                    <button type="submit" class="btn btn-primary" name="ssa" value="ssa">Arvuta</button>
+                </div>
+            </form>
+
+            <form action="" method="post" class="form-inline">
+                <blockquote style="display: inline">ASA</blockquote>
+
+                <div class="form-group">
+                    <label for="">Sisesta nurgad B ja A ning külg c:</label>
+                    <input type="text" class="form-control" name="B" id="" placeholder="nurk B">
+                    <input type="text" class="form-control" name="c" id="" placeholder="külg c">
+                    <input type="text" class="form-control" name="A" id="" placeholder="nurk A">
+
+                    <button type="submit" class="btn btn-primary" name="asa" value="asa">Arvuta</button>
+                </div>
+            </form>
+
+            <form action="" method="post" class="form-inline">
+
+                <blockquote style="display: inline">AAS</blockquote>
+
+                <div class="form-group">
+                    <label for="">Sisesta külg a ning nurgad B ja A:</label>
+                    <input type="text" class="form-control" name="a" id="" placeholder="kylg a">
+                    <input type="text" class="form-control" name="B" id="" placeholder="nurk B">
+                    <input type="text" class="form-control" name="A" id="" placeholder="nurk A">
+
+                    <button type="submit" class="btn btn-primary" name="aas" value="aas">Arvuta</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="row" style="padding-top: 30px">
+            <img src="SSS.png" alt="" style="float: left">
 
 
-<div class="container">
-
-    <h2 style="text-align: center; margin-bottom: 50px; margin-top: 60px">LAHENDA KOLMNURK</h2>
-    <div class="row">
-        <form action="" method="post" class="form-inline">
-            <blockquote style="display: inline">SSS</blockquote>
-
-            <div class="form-group">
-                <label for="">Sisesta kolmnurga külgede pikkused:</label>
-                <input type="text" class="form-control" name="a" id="" placeholder="külg a">
-                <input type="text" class="form-control" name="b" id="" placeholder="külg b">
-                <input type="text" class="form-control" name="c" id="" placeholder="külg c">
-
-                <button type="submit" class="btn btn-primary" name="sss" value="sss">Arvuta</button>
-            </div>
-        </form>
-
-        <form action="" method="post" class="form-inline">
-            <blockquote style="display: inline">SAS</blockquote>
-
-            <div class="form-group">
-                <label for="">Sisesta küljed a ja b ning nurk C:</label>
-                <input type="text" class="form-control" name="a" id="" placeholder="külg a">
-                <input type="text" class="form-control" name="b" id="" placeholder="külg b">
-                <input type="text" class="form-control" name="C" id="" placeholder="nurk C">
-
-                <button type="submit" class="btn btn-primary" name="sas" value="sas">Arvuta</button>
-            </div>
-        </form>
-
-        <form action="" method="post" class="form-inline">
-            <blockquote style="display: inline">SSA</blockquote>
-
-            <div class="form-group">
-                <label for="">Sisesta küljed a ja b ning nurk B:</label>
-                <input type="text" class="form-control" name="a" id="" placeholder="külg a">
-                <input type="text" class="form-control" name="b" id="" placeholder="külg b">
-                <input type="text" class="form-control" name="B" id="" placeholder="nurk B">
-
-                <button type="submit" class="btn btn-primary" name="ssa" value="ssa">Arvuta</button>
-            </div>
-        </form>
-
-        <form action="" method="post" class="form-inline">
-            <blockquote style="display: inline">ASA</blockquote>
-
-            <div class="form-group">
-                <label for="">Sisesta nurgad B ja A ning külg c:</label>
-                <input type="text" class="form-control" name="B" id="" placeholder="nurk B">
-                <input type="text" class="form-control" name="c" id="" placeholder="külg c">
-                <input type="text" class="form-control" name="A" id="" placeholder="nurk A">
-
-                <button type="submit" class="btn btn-primary" name="asa" value="asa">Arvuta</button>
-            </div>
-        </form>
-
-        <form action="" method="post" class="form-inline">
-
-            <blockquote style="display: inline">AAS</blockquote>
-
-            <div class="form-group">
-                <label for="">Sisesta külg a ning nurgad B ja A:</label>
-                <input type="text" class="form-control" name="a" id="" placeholder="kylg a">
-                <input type="text" class="form-control" name="B" id="" placeholder="nurk B">
-                <input type="text" class="form-control" name="A" id="" placeholder="nurk A">
-
-                <button type="submit" class="btn btn-primary" name="aas" value="aas">Arvuta</button>
-            </div>
-
-        </form>
-    </div>
-
-    <div class="row" style="padding-top: 30px">
-        <img src="SSS.png" alt="" style="float: left">
-
-
-        <div style="float: left">
-            <?php
+            <div style="float: left">
+                <?php
 
             // SSS
-            if (isset($_POST['sss'])) {
+                if (isset($_POST['sss'])) {
 
-                $a = $_POST['a'];
-                $b = $_POST['b'];
-                $c = $_POST['c'];
+                    $a = $_POST['a'];
+                    $b = $_POST['b'];
+                    $c = $_POST['c'];
 
                 // KONTROLLI, ET KÕIK VÄLJAD OLEKSID TÄIDETUD
-                if ($a == null || $b == null || $c == null) {
-                    echo "Kõik väljad peavad olema täidetud!";
-                    exit();
-                }
+                    if ($a == null || $b == null || $c == null) {
+                        echo "Kõik väljad peavad olema täidetud!";
+                        exit();
+                    }
 
                 // KONTROLLI, ET SISESTATUD VÄÄRTUSED OLEKSID POSITIIVSED
-                if ($a <= 0 || $b <= 0 || $c <= 0) {
-                    echo "Väärtused ei saa olla negatiivsed.";
-                    exit();
-                }
+                    if ($a <= 0 || $b <= 0 || $c <= 0) {
+                        echo "Väärtused ei saa olla negatiivsed.";
+                        exit();
+                    }
 
                 // KONTROLLI, KAS ON KOLMNURK
-                if ($a + $b <= $c || $a + $c <= $b || $c + $b <= $a) {
-                    echo "Ei ole kolmnurk";
-                    exit();
-                }
+                    if ($a + $b <= $c || $a + $c <= $b || $c + $b <= $a) {
+                        echo "Ei ole kolmnurk";
+                        exit();
+                    }
 
 
                 // ÜMBERMÕÕT
-                $ymberm66t = $a + $b + $c;
+                    $ymberm66t = $a + $b + $c;
 
 
                 // KOLMNURGA PINDALA (HERON'i valem, pindala arvutatakse kolmnurga külgede kaudu)
-                $pindala = sqrt(($ymberm66t / 2) * (($ymberm66t / 2) - $a) * (($ymberm66t / 2) - $b) * (($ymberm66t / 2) - $c));
+                    $pindala = sqrt(($ymberm66t / 2) * (($ymberm66t / 2) - $a) * (($ymberm66t / 2) - $b) * (($ymberm66t / 2) - $c));
 
 
                 // NURKADE SUURUSED
@@ -480,4 +487,7 @@
             ?>
         </div>
 
-</div>
+    </div>
+
+</body>
+</html>
